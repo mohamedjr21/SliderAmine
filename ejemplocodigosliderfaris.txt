@@ -1,0 +1,40 @@
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.Slider;
+import javafx.stage.Stage;
+
+public class EjemploSlider extends Application {
+
+    public void start(Stage escenario) {
+
+        // creando grupo
+        Group raiz = new Group();
+        Scene escena = new Scene(raiz, 600, 400);
+
+        // establecer la escena en el escenario
+        escenario.setScene(escena);
+
+        // establecer el título del marco
+        escenario.setTitle("Ejemplo de Slider");
+
+        // crear slider
+        Slider deslizador = new Slider();
+
+        // agregar slider al marco
+        raiz.getChildren().add(deslizador);
+
+        escenario.show();
+    }
+
+    // Método principal
+    public static void main(String[] args) {
+
+        // lanzar la aplicación
+        launch(args);
+    }
+}
+
+
+
+Faris Mohamed Amine
